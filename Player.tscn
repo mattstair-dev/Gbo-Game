@@ -4,8 +4,9 @@
 [ext_resource path="res://Player.gd" type="Script" id=2]
 [ext_resource path="res://player shadow.png" type="Texture" id=3]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 5.64982, 6.85712 )
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 5.32528
+height = 1.18344
 
 [sub_resource type="Animation" id=2]
 resource_name = "Idle_Left"
@@ -108,7 +109,12 @@ tracks/0/keys = {
 }
 
 [node name="Player" type="KinematicBody2D"]
+position = Vector2( 6.2996, 7.63827 )
+collision_layer = 2
 script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Shadow" type="Sprite" parent="."]
 position = Vector2( 0.00860551, 8.96757 )
@@ -123,7 +129,7 @@ hframes = 5
 frame = 14
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, -1 )
+position = Vector2( 0, 3.77995 )
 shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

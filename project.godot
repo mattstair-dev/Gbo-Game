@@ -24,6 +24,10 @@ config/name="GBO"
 run/main_scene="res://World.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+globalStats="*res://globalStats.gd"
+
 [display]
 
 window/size/width=1280
@@ -87,6 +91,7 @@ ui_down={
 
 2d_physics/layer_1="world"
 2d_physics/layer_2="player"
+2d_physics/layer_3="items"
 
 [rendering]
 

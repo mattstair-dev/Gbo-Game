@@ -5,6 +5,7 @@ onready var animationPlayer = $AnimationPlayer
 var velocity = Vector2.ZERO
 var speed = 100
 var last_pressed = 1
+var points = 0
 
 func _physics_process(delta):
 	get_input()
